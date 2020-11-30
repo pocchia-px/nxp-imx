@@ -21,5 +21,4 @@ Download the BSP source:
 |:---------------:|:------------------:|
 |      zeus       |  i.Core MX8M Plus  | 
 |                 |  i.Core MX8M Mini  |
-|:---------------:|:------------------:|
 |     dunfell     |  MicroGEA STM32MP1 | 
