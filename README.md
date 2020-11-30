@@ -19,5 +19,7 @@ Download the BSP source:
 
 | yocto-codename  |      modules       |
 |:---------------:|:------------------:|
-|       zeus      |  i.Core MX8M Plus  | 
+|      zeus       |  i.Core MX8M Plus  | 
 |                 |  i.Core MX8M Mini  |
+|:---------------:|:------------------:|
+|     dunfell     |  MicroGEA STM32MP1 | 
