@@ -38,7 +38,7 @@
   <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"/>
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="5144a99a696a8a72c0765ea0e8be8ceafaa78f85"/>
   <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="7f235b6f8973cc5269448375f2a8f9867bb2a369"/>
-  <project name="meta-engicam-mx8" path="sources/meta-engicam-mx8" remote= "engicam" revision="6f7cf6f63490b1f7063a6b8a9b99791a4f029d2d" upstream="5.4.47"/>
+  <project name="meta-engicam-mx8" path="sources/meta-engicam-mx8" remote= "engicam" revision="5.4.47"/>
 
   <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="3533d0b4b356ba6845f30d3d9b3143bc54ae254e"/>
 
