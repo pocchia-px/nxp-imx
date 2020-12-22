@@ -21,6 +21,7 @@ Download the BSP source:
 |:---------------:|:------------------:|
 |       zeus      |  i.Core MX8M Plus  | 
 |                 |  i.Core MX8M Mini  |
+|                 |  i.Core MX8X       |
 
 ## Install Docker Engine on Ubuntu
 
