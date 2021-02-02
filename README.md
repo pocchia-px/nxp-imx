@@ -14,14 +14,18 @@ Download the BSP source:
     $: mkdir -p ~/yocto/zeus
     $: cd ~/yocto/zeus
     $: curl https://raw.githubusercontent.com/engicam-stable/engicam-bsp-release/zeus/Dockerfile > Dockerfile
-    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b zeus -m engicam-bsp-release.xml
+    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b zeus-nxp -m engicam-bsp-release.xml
     $: repo sync
 
-| yocto-codename  |      modules       |
-|:---------------:|:------------------:|
-|       zeus      |  i.Core MX8M Plus  | 
-|                 |  i.Core MX8M Mini  |
-|                 |  i.Core MX8X       |
+| yocto-codename  |      modules           |
+|:---------------:|:----------------------:|
+|       zeus      | i.Core MX8M Plus       | 
+|                 | i.Core MX8M Mini       |
+|                 | i.Core MX8X            |
+|                 | i.Core MX8M Mini 2GB   |
+|                 | Smarcore MX8M Plus     |
+|                 | Smarcore MX8X          |
+
 
 ## Install Docker Engine on Ubuntu
 
