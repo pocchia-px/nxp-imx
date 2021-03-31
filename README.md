@@ -76,7 +76,7 @@ where ``<machine-name>`` corresponds to the module for which the operative syste
 
 	 DISTRO=eng-imx-xwayland MACHINE=imx8mp-icore source imx-setup-release.sh -b build
 
-where a directory named ``build`` is created and enviroment variables are set to compile images for the module ``i.Core MX8M Plus``. Please notice that the available ``<machine-name>`` correspond to the names of the relative configuration files in ``/sources/meta-engicam-mx8/conf/machine``.
+where a directory named ``build`` is created and enviroment variables are set to compile images for the module ``i.Core MX8M Plus``. Please notice that the available ``<machine-name>`` correspond to the names of the relative configuration files in ``/sources/meta-engicam-nxp/conf/machine``.
 
 If the build directory already exists due to previous compilations it will be required to set the enviroment variables only executing the command:
 
@@ -84,9 +84,9 @@ If the build directory already exists due to previous compilations it will be re
 
 ## Configure yocto layers
 
-Add with bitbake the meta-engicam-mx8 layer to the image layers:
+Add with bitbake the meta-engicam-nxp layer to the image layers:
 
-	bitbake-layers add-layer ../sources/meta-engicam-mx8
+	bitbake-layers add-layer ../sources/meta-engicam-nxp
 
 ## Compile and flash image on sdcard
 
