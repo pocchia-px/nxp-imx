@@ -14,12 +14,12 @@ Download the BSP source:
     $: mkdir -p ~/yocto/dunfell
     $: cd ~/yocto/dunfell
     $: curl https://raw.githubusercontent.com/engicam-stable/engicam-bsp-release/dunfell/Dockerfile > Dockerfile
-    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b dunfell-st-5.10-icore -m engicam-bsp-release.xml
+    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b dunfell-st-5.10_icore -m engicam-bsp-release.xml
     $: repo sync
 
-| yocto-codename  |      modules       |
-|:---------------:|:------------------:|
-|     dunfell     |   iCore STM32MP1   |
+|         yocto-codename        |      modules       |
+|:-----------------------------:|:------------------:|
+|     dunfell-st-5.10_icore     |   iCore STM32MP1   |
 
 ## Install Docker Engine on Ubuntu
 
