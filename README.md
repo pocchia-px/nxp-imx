@@ -14,12 +14,12 @@ Download the BSP source:
     $: mkdir -p ~/yocto/dunfell
     $: cd ~/yocto/dunfell
     $: curl https://raw.githubusercontent.com/engicam-stable/engicam-bsp-release/dunfell/Dockerfile > Dockerfile
-    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b dunfell -m engicam-bsp-release.xml
+    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b dunfell-st-5.10_ugea -m engicam-bsp-release.xml
     $: repo sync
 
-| yocto-codename  |      modules       |
-|:---------------:|:------------------:|
-|     dunfell     |  MicroGEA STM32MP1 | 
+|         yocto-codename       |      modules       |
+|:----------------------------:|:------------------:|
+|     dunfell-st-5.10_ugea     |  MicroGEA STM32MP1 | 
 
 ## Install Docker Engine on Ubuntu
 
@@ -64,11 +64,11 @@ Install Docker Engine:
 
 Enter Yocto folder and launch the script setting enviroment variables:
 
-	DISTRO=<distro name> MACHINE=<machine name> source ayers/meta-engicam-st/scripts/envsetup.sh <build dir>
+	DISTRO=<distro name> MACHINE=<machine name> source ayers/meta-st/scripts/envsetup.sh <build dir>
 
 where ``<machine-name>`` corresponds to the module for which the operative system image will be compiled and ``<build-dir-name>`` is the bulding directory name chosen by the user, as in the following example:
 
-	 DISTRO=openstlinux-weston MACHINE=stm32mp1-ugea source layers/meta-engicam-st/scripts/envsetup.sh build
+	 DISTRO=openstlinux-weston MACHINE=stm32mp1-ugea source layers/meta-st/scripts/envsetup.sh build
 
 where a directory named ``build`` is created and enviroment variables are set to compile images for the module ``MicroGEA STM32MP1``. Please notice that the available ``<machine-name>`` correspond to the names of the relative configuration files in ``/sources/meta-engicam-st/conf/machine``.
 
@@ -76,7 +76,7 @@ where a directory named ``build`` is created and enviroment variables are set to
 
 Compile the desired image with bitbake using the command (in this example we compile the recipe ``engicam-test-hw.bb`` for ``MicroGEA STM32MP1``):
 
-	bitbake engicam-test-hw
+	bitbake engicam-test-image
 
 Once the image is compiled it will be possible to find in the build directory a deploy folder with the image files. The relative path to this folder from the yocto directory will be:
 
