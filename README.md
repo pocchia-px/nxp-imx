@@ -11,9 +11,9 @@ Install the repo utility:
 Download the BSP source:
 
     $: PATH=${PATH}:~/bin
-    $: mkdir -p ~/yocto/gatesgarth
-    $: cd ~/yocto/gatesgarth
-    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b gatesgarth-nxp -m engicam-bsp-release.xml
+    $: mkdir -p ~/yocto/hardknott
+    $: cd ~/yocto/hardknott
+    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b hardknott-nxp -m engicam-bsp-release.xml
     $: repo sync
 
 ## Set enviroment variables
